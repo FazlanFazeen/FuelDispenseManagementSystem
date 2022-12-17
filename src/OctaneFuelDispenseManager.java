@@ -6,10 +6,10 @@ public class OctaneFuelDispenseManager implements FuelDispenseManager{
     private double priceOfLitre;
     private String operating;
     private double dispensedAmount;
-    private FuelRepository Repository;
+    private Repository Repository;
 
     //Constructor
-    public OctaneFuelDispenseManager(int dispenserNum, String fuelType, double priceOfLitre, String operating, double dispensedAmount, FuelRepository Repository) {
+    public OctaneFuelDispenseManager(int dispenserNum, String fuelType, double priceOfLitre, String operating, double dispensedAmount, Repository Repository) {
         this.dispenserNum = dispenserNum;
         this.fuelType = fuelType;
         this.priceOfLitre = priceOfLitre;
@@ -59,11 +59,11 @@ public class OctaneFuelDispenseManager implements FuelDispenseManager{
         this.dispensedAmount = dispensedAmount;
     }
 
-    public FuelRepository getRepository() {
+    public Repository getRepository() {
         return Repository;
     }
 
-    public void setRepository(FuelRepository repository) {
+    public void setRepository(Repository repository) {
         Repository = repository;
     }
 
@@ -71,7 +71,4 @@ public class OctaneFuelDispenseManager implements FuelDispenseManager{
     public void installingDispenser() {
 
     }
-}
-
-
 }

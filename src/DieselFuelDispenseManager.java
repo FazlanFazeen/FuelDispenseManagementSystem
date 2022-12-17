@@ -7,11 +7,11 @@ public class DieselFuelDispenseManager implements FuelDispenseManager{
     private double priceOfLitre;
     private String operating;
     private double dispensedAmount;
-    private FuelRepository Repository;
+    private Repository Repository;
 
     //Constructor
 
-    public DieselFuelDispenseManager(int dispenserNum, String fuelType, double priceOfLitre, String operating, double dispensedAmount, FuelRepository Repository) {
+    public DieselFuelDispenseManager(int dispenserNum, String fuelType, double priceOfLitre, String operating, double dispensedAmount, Repository Repository) {
         this.dispenserNum = dispenserNum;
         this.fuelType = fuelType;
         this.priceOfLitre = priceOfLitre;
